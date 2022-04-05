@@ -13,9 +13,14 @@
 	
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-	<script src="assets/flickity.min.js"></script>
-	<link rel="stylesheet" href="assets/css/flickity.css" media="screen">
-
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+	<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+	<link rel="stylesheet" href="assets/css/bundle.css" media="screen">
+	
 	
 	<!-- FontAwesome JS-->
 	<script defer src="assets/fontawesome/js/all.min.js"></script>
@@ -240,76 +245,484 @@
 								</aside><!--//resume-aside-->
 							</div><!--//row-->
 						</div><!--//resume-body-->
-						<div class="mt-3 mb-5 main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": 1500, "wrapAround": true, "prevNextButtons": false }'>
+						
+						<div class="full-page">
+	
+							<div class="container px-0">
+								<div class="row">
+									<div class="col-lg-6">
+										
+										<div class="detail-title mt-2">Projects</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="max-container timeline px-0">
 								
-								<div class="col-12 col-md-4 d-flex justify-content-center">
-									<a href="https://www.erith.com/" target="_blank" class="d-flex flex-column justify-content-center align-items-center bg-white" style="display: block; width: 100%; position: relative; background: white; height: 130px;">
-										<!-- <div class="project-logo" style="display: block; width: 100%; position: relative; padding-bottom: 100%; background: white;"> -->
-											<img src="assets/images/Erith-Logo.webp" class="w-100 carousel-cell-image" style="object-fit: contain; height: 8rem;">
-										<!-- </div> -->
-									</a>
-								</div>
-								<div class="col-12 col-md-4 d-flex justify-content-center">
-									<a href="https://edisongroup.com" target="_blank" class="d-flex flex-column justify-content-center align-items-center bg-white" style="display: block; width: 100%; position: relative; background: white; height: 130px;">
-										<!-- <div class="project-logo" style="display: block; width: 100%; position: relative; padding-bottom: 100%; background: white;"> -->
-											<img src="assets/images/edison-logo.jpg" class="w-100 carousel-cell-image" style="object-fit: contain; height: 8rem;">
-										<!-- </div> -->
-									</a>
-								</div>
-								<div class="col-12 col-md-4 d-flex justify-content-center">
-									<a href="https://ella.co" target="_blank" class="d-flex flex-column justify-content-center align-items-center bg-white" style="display: block; width: 100%; position: relative; background: white; height: 130px;">
-										<!-- <div class="project-logo" style="display: block; width: 100%; position: relative; padding-bottom: 100%; background: white;"> -->
-											<img src="assets/images/ella-logo.png" class="w-100 carousel-cell-image" style="object-fit: contain; height: 8rem;">
-										<!-- </div> -->
-									</a>
-								</div>
-								<div class="col-12 col-md-4 d-flex justify-content-center">
-									<a href="https://tungsten-network.com" target="_blank" class="d-flex flex-column justify-content-center align-items-center bg-white" style="display: block; width: 100%; position: relative; background: white; height: 130px;">
-										<!-- <div class="project-logo" style="display: block; width: 100%; position: relative; padding-bottom: 100%; background: white;"> -->
-											<img src="assets/images/tungsten-logo.png" class="w-100 carousel-cell-image" style="object-fit: contain; height: 8rem;">
-										<!-- </div> -->
-									</a>
-								</div>
+								<div class="row mx-auto w-100 position-relative history-timeline">
+									<div class="position-absolute left-arrow-about" id="leftArrow"></div>
+									<div class="position-absolute right-arrow-about" id="rightArrow"></div>
+									<div class="carousel-timeline w-100" data-flickity='{ "autoPlay": true, "wrapAround": false, "cellAlign": "center", "pageDots": false, "groupCells": 1}'>
+										
 
-								<div class="col-12 col-md-4 d-flex justify-content-center">
-									<a href="https://theamx.com" target="_blank" class="d-flex flex-column justify-content-center align-items-center bg-white" style="display: block; width: 100%; position: relative; background: white; height: 130px;">
-										<!-- <div class="project-logo" style="display: block; width: 100%; position: relative; padding-bottom: 100%; background: white;"> -->
-											<img src="assets/images/AMX_logo.svg" class="w-100 carousel-cell-image" style="object-fit: contain; height: 8rem;">
-										<!-- </div> -->
-									</a>
-								</div>
-								<div class="col-12 col-md-4 d-flex justify-content-center">
-									<a href="https://minttwist.com" target="_blank" class="d-flex flex-column justify-content-center align-items-center bg-white" style="display: block; width: 100%; position: relative; background: white; height: 130px;">
-										<!-- <div class="project-logo" style="display: block; width: 100%; position: relative; padding-bottom: 100%; background: white;"> -->
-											<img src="assets/images/minttwist-logo.png" class="w-100 carousel-cell-image" style="object-fit: contain; height: 8rem;">
-										<!-- </div> -->
-									</a>
-								</div>
-								<div class="col-12 col-md-4 d-flex justify-content-center">
-									<a href="https://www.deathpenaltyproject.org/" target="_blank" class="d-flex flex-column justify-content-center align-items-center bg-white" style="display: block; width: 100%; position: relative; background: white; height: 130px;">
-										<!-- <div class="project-logo" style="display: block; width: 100%; position: relative; padding-bottom: 100%; background: white;"> -->
-											<img src="assets/images/dpp.png" class="w-100 carousel-cell-image" style="object-fit: contain; height: 8rem;">
-										<!-- </div> -->
-									</a>
-								</div>
-								<div class="col-12 col-md-4 d-flex justify-content-center">
-									<a href="https://fastlanepab.co.uk" target="_blank" class="d-flex flex-column justify-content-center align-items-center bg-white" style="display: block; width: 100%; position: relative; background: white; height: 130px;">
-										<!-- <div class="project-logo" style="display: block; width: 100%; position: relative; padding-bottom: 100%; background: white;"> -->
-											<img src="assets/images/fastlane.png" class="w-100 carousel-cell-image" style="object-fit: contain; height: 8rem;">
-										<!-- </div> -->
-									</a>
-								</div>
-								<div class="col-12 col-md-4 d-flex justify-content-center">
-									<a href="https://mccabebarton.com/" target="_blank" class="d-flex flex-column justify-content-center align-items-center bg-white" style="display: block; width: 100%; position: relative; background: white; height: 130px;">
-										<!-- <div class="project-logo" style="display: block; width: 100%; position: relative; padding-bottom: 100%; background: white;"> -->
-											<img src="assets/images/mccabe.jpeg" class="w-100 carousel-cell-image" style="object-fit: contain; height: 8rem;">
-										<!-- </div> -->
-									</a>
-								</div>
+										<div class="col-xl-3 col-lg-6 carousel-parent-timeline">
+											<div class="draw-a-line w-100 transparent"></div>
+											<div class="draw-a-line first-line w-100"></div>
+											
+											<div class="position-relative" style="height: 2.625rem;">
+											
+													<div class="position-absolute first-timeline-in-group">
+														<div class="w-100 d-flex align-items-center">
+															<img src="assets/images/point.png" class="timeline-circle">
+														
+															<div class="timeline-circle-first-line"></div>
+															<div class="timeline-circle-year mx-2">
+															
+																<a href="https://www.erith.com/" target="_blank" class="timeline-circle-year mx-2" style="font-size: 17px;">
+																	Erith
+																</a>
+																
+																
+															</div>
 
+															<div class="timeline-circle-second-line"></div>
+														</div>
+															
+													</div>
+											
+											</div>
+											<a href="https://www.erith.com/" target="_blank" class="card card--default mx-0 carousel-cell w-100 history position-relative" style="border: 1px #BECDE0 solid;">
+							                        <div class="h-100 d-flex flex-column">
+							                          <div class="position-relative">
+							                            <div class="card__image">
+							                             
+							                             <img src="assets/images/Erith-Logo.webp" class="w-100 carousel-cell-image mt-2 px-2" style="object-fit: contain; height: 8rem;">              
+							                                     
+							                            </div>
+							                            
+							                          </div>
+							                          <div class="card-body d-flex flex-column justify-content-between py-3">
 
-							
-							
+							                          		<div class="card-title card-title__primary mb-1">
+								                            	Skills                          
+								                          	</div>
+								                            <div class="card-title card-title__secondary mb-1">
+								                            	ACF, Flickity, Contact Form 7, Javascript, jQuery                        
+								                          	</div>
+								        					
+							                          </div>
+							                        </div>
+							                        <div class="about-company-carousel-overlay"></div>
+							                </a>
+											
+										</div>
+
+										<div class="col-xl-3 col-lg-6 carousel-parent-timeline">
+											<div class="draw-a-line w-100 transparent"></div>
+											<div class="draw-a-line w-100"></div>
+											
+											<div class="position-relative" style="height: 2.625rem;">
+											
+													<div class="position-absolute first-timeline-in-group">
+														<div class="w-100 d-flex align-items-center">
+															<img src="assets/images/point.png" class="timeline-circle">
+														
+															<div class="timeline-circle-first-line"></div>
+															<div class="timeline-circle-year mx-2">
+															
+																<a href="https://www.tungsten-network.com/" target="_blank" class="timeline-circle-year mx-2" style="font-size: 17px;">
+																	Tungsten Network
+																</a>
+																
+																
+															</div>
+
+															<div class="timeline-circle-second-line"></div>
+														</div>
+															
+													</div>
+											
+											</div>
+											<a href="https://www.tungsten-network.com/" target="_blank" class="card card--default mx-0 carousel-cell w-100 history position-relative" style="border: 1px #BECDE0 solid;">
+							                        <div class="h-100 d-flex flex-column">
+							                          <div class="position-relative">
+							                            <div class="card__image">
+							                             
+							                             <img src="assets/images/tungsten-Logo.png" class="w-100 carousel-cell-image mt-2 px-2" style="object-fit: contain; height: 8rem;">              
+							                                     
+							                            </div>
+							                            
+							                          </div>
+							                          <div class="card-body d-flex flex-column justify-content-between py-3">
+
+							                          		<div class="card-title card-title__primary mb-1">
+								                            	Skills                          
+								                          	</div>
+								                            <div class="card-title card-title__secondary mb-1">
+								                            	ACF, Amazon SES, WP rest API, Third party API integration, Javascript, jQuery                        
+								                          	</div>
+								        					
+							                          </div>
+							                        </div>
+							                        <div class="about-company-carousel-overlay"></div>
+							                </a>
+											
+										</div>
+
+										<div class="col-xl-3 col-lg-6 carousel-parent-timeline">
+											<div class="draw-a-line w-100 transparent"></div>
+											<div class="draw-a-line w-100"></div>
+											<div class="position-relative" style="height: 2.625rem;">
+											
+													<div class="position-absolute first-timeline-in-group">
+														<div class="w-100 d-flex align-items-center">
+															<img src="assets/images/point.png" class="timeline-circle">
+														
+															<div class="timeline-circle-first-line"></div>
+															<!-- <div class="timeline-circle-year mx-2">  -->
+															
+																<a href="https://edisongroup.com" target="_blank" class="timeline-circle-year mx-2" style="font-size: 17px;">
+																	Edison Group
+																</a>
+																
+															<!-- </div> -->
+
+															<div class="timeline-circle-second-line"></div>
+														</div>
+															
+													</div>
+											
+											</div>
+											<a href="https://edisongroup.com" target="_blank" class="card card--default mx-0 carousel-cell w-100 history position-relative" style="border: 1px #BECDE0 solid;">
+							                        <div class="h-100 d-flex flex-column">
+							                          <div class="position-relative">
+							                            <div class="card__image">
+							                             
+							                             <img src="assets/images/edison-logo.jpg" class="w-100 carousel-cell-image mt-2 px-2" style="object-fit: contain; height: 8rem;">              
+							                                     
+							                            </div>
+							                            
+							                          </div>
+							                          <div class="card-body d-flex flex-column justify-content-between py-3">
+
+							                          		<div class="card-title card-title__primary mb-1">
+								                            	Skills                          
+								                          	</div>
+								                            <div class="card-title card-title__secondary mb-1">
+								                            	ACF, WP rest API, third part API and Elastic search API integration, cron jobs, custom plugin, Javascript, jQuery                          
+								                          	</div>
+								        				
+							                          </div>
+							                        </div>
+							                        <div class="about-company-carousel-overlay"></div>
+							                </a>
+											
+										</div>
+
+										<div class="col-xl-3 col-lg-6 carousel-parent-timeline">
+											<div class="draw-a-line w-100 transparent"></div>
+											<div class="draw-a-line w-100"></div>
+											<div class="position-relative" style="height: 2.625rem;">
+											
+													<div class="position-absolute first-timeline-in-group">
+														<div class="w-100 d-flex align-items-center">
+															<img src="assets/images/point.png" class="timeline-circle">
+														
+															<div class="timeline-circle-first-line"></div>
+															<!-- <div class="timeline-circle-year mx-2">  -->
+															
+																<a href="https://ella.co" target="_blank" class="timeline-circle-year mx-2" style="font-size: 17px;">
+																	Ella & co
+																</a>
+																
+															<!-- </div> -->
+
+															<div class="timeline-circle-second-line"></div>
+														</div>
+															
+													</div>
+											
+											</div>
+											<a href="https://ella.co" target="_blank" class="card card--default mx-0 carousel-cell w-100 history position-relative" style="border: 1px #BECDE0 solid;">
+							                        <div class="h-100 d-flex flex-column">
+							                          <div class="position-relative">
+							                            <div class="card__image">
+							                             
+							                             <img src="assets/images/ella-logo.png" class="w-100 carousel-cell-image mt-2 px-2" style="object-fit: contain; height: 8rem;">              
+							                                     
+							                            </div>
+							                            
+							                          </div>
+							                          <div class="card-body d-flex flex-column justify-content-between py-3">
+
+							                          		<div class="card-title card-title__primary mb-1">
+								                            	Skills                          
+								                          	</div>
+								                            <div class="card-title card-title__secondary mb-1">
+								                            	ACF, Stripe API and Twilio API integration, Mailchimp, Woocommerce, custom plugin, Javascript, jQuery                        
+								                          	</div>
+								        				
+							                          </div>
+							                        </div>
+							                        <div class="about-company-carousel-overlay"></div>
+							                </a>
+											
+										</div>
+
+										<div class="col-xl-3 col-lg-6 carousel-parent-timeline">
+											<div class="draw-a-line w-100 transparent"></div>
+											<div class="draw-a-line w-100"></div>
+											<div class="position-relative" style="height: 2.625rem;">
+											
+													<div class="position-absolute first-timeline-in-group">
+														<div class="w-100 d-flex align-items-center">
+															<img src="assets/images/point.png" class="timeline-circle">
+														
+															<div class="timeline-circle-first-line"></div>
+															<!-- <div class="timeline-circle-year mx-2">  -->
+															
+																<a href="https://www.theamx.com/" target="_blank" class="timeline-circle-year mx-2" style="font-size: 17px;">
+																	AMX
+																</a>
+																
+															<!-- </div> -->
+
+															<div class="timeline-circle-second-line"></div>
+														</div>
+															
+													</div>
+											
+											</div>
+											<a href="https://www.theamx.com/" target="_blank" class="card card--default mx-0 carousel-cell w-100 history position-relative" style="border: 1px #BECDE0 solid;">
+							                        <div class="h-100 d-flex flex-column">
+							                          <div class="position-relative">
+							                            <div class="card__image">
+							                             
+							                             <img src="assets/images/AMX_logo.svg" class="w-100 carousel-cell-image mt-2 px-2" style="object-fit: contain; height: 8rem;">              
+							                                     
+							                            </div>
+							                            
+							                          </div>
+							                          <div class="card-body d-flex flex-column justify-content-between py-3">
+
+							                          		<div class="card-title card-title__primary mb-1">
+								                            	Skills                          
+								                          	</div>
+								                            <div class="card-title card-title__secondary mb-1">
+								                            	ACF, Contact Form 7, Javascript, jQuery                        
+								                          	</div>
+								        					
+							                          </div>
+							                        </div>
+							                        <div class="about-company-carousel-overlay"></div>
+							                </a>
+											
+										</div>
+
+										<div class="col-xl-3 col-lg-6 carousel-parent-timeline">
+											<div class="draw-a-line w-100 transparent"></div>
+											<div class="draw-a-line w-100"></div>
+											<div class="position-relative" style="height: 2.625rem;">
+											
+													<div class="position-absolute first-timeline-in-group">
+														<div class="w-100 d-flex align-items-center">
+															<img src="assets/images/point.png" class="timeline-circle">
+														
+															<div class="timeline-circle-first-line"></div>
+															<!-- <div class="timeline-circle-year mx-2">  -->
+															
+																<a href="https://minttwist.com" target="_blank" class="timeline-circle-year mx-2" style="font-size: 17px;">
+																	MintTwist
+																</a>
+																
+															<!-- </div> -->
+
+															<div class="timeline-circle-second-line"></div>
+														</div>
+															
+													</div>
+											
+											</div>
+											<a href="https://minttwist.com" target="_blank" class="card card--default mx-0 carousel-cell w-100 history position-relative" style="border: 1px #BECDE0 solid;">
+							                        <div class="h-100 d-flex flex-column">
+							                          <div class="position-relative">
+							                            <div class="card__image">
+							                             
+							                             <img src="assets/images/minttwist-logo.png" class="w-100 carousel-cell-image mt-2 px-2" style="object-fit: contain; height: 8rem;">              
+							                                     
+							                            </div>
+							                            
+							                          </div>
+							                          <div class="card-body d-flex flex-column justify-content-between py-3">
+
+							                          		<div class="card-title card-title__primary mb-1">
+								                            	Skills                          
+								                          	</div>
+								                            <div class="card-title card-title__secondary mb-1">
+								                            	ACF, Amazon SES, custom plugin, Javascript, jQuery                     
+								                          	</div>
+								        					
+							                          </div>
+							                        </div>
+							                        <div class="about-company-carousel-overlay"></div>
+							                </a>
+											
+										</div>
+
+										<div class="col-xl-3 col-lg-6 carousel-parent-timeline">
+											<div class="draw-a-line w-100 transparent"></div>
+											<div class="draw-a-line w-100"></div>
+											<div class="position-relative" style="height: 2.625rem;">
+											
+													<div class="position-absolute first-timeline-in-group">
+														<div class="w-100 d-flex align-items-center">
+															<img src="assets/images/point.png" class="timeline-circle">
+														
+															<div class="timeline-circle-first-line"></div>
+															<!-- <div class="timeline-circle-year mx-2">  -->
+															
+																<a href="https://www.deathpenaltyproject.org/" target="_blank" class="timeline-circle-year mx-2" style="font-size: 17px;">
+																	Death Penalty Project
+																</a>
+																
+															<!-- </div> -->
+
+															<div class="timeline-circle-second-line"></div>
+														</div>
+															
+													</div>
+											
+											</div>
+											<a href="https://www.deathpenaltyproject.org/" target="_blank" class="card card--default mx-0 carousel-cell w-100 history position-relative" style="border: 1px #BECDE0 solid;">
+							                        <div class="h-100 d-flex flex-column">
+							                          <div class="position-relative">
+							                            <div class="card__image">
+							                             
+							                             <img src="assets/images/dpp.png" class="w-100 carousel-cell-image mt-2 px-2" style="object-fit: contain; height: 8rem;">              
+							                                     
+							                            </div>
+							                            
+							                          </div>
+							                          <div class="card-body d-flex flex-column justify-content-between py-3">
+
+							                          		<div class="card-title card-title__primary mb-1">
+								                            	Skills                          
+								                          	</div>
+								                            <div class="card-title card-title__secondary mb-1">
+								                            	ACF, Javascript, jQuery, third party API integration                            
+								                          	</div>
+								        					
+							                          </div>
+							                        </div>
+							                        <div class="about-company-carousel-overlay"></div>
+							                </a>
+											
+										</div>
+										
+										<div class="col-xl-3 col-lg-6 carousel-parent-timeline">
+											<div class="draw-a-line w-100 transparent"></div>
+											<div class="draw-a-line w-100"></div>
+											<div class="position-relative" style="height: 2.625rem;">
+											
+													<div class="position-absolute first-timeline-in-group">
+														<div class="w-100 d-flex align-items-center">
+															<img src="assets/images/point.png" class="timeline-circle">
+														
+															<div class="timeline-circle-first-line"></div>
+															<!-- <div class="timeline-circle-year mx-2">  -->
+															
+																<a href="https://fastlanepab.co.uk" target="_blank" class="timeline-circle-year mx-2" style="font-size: 17px;">
+																	Fastlane
+																</a>
+																
+															<!-- </div> -->
+
+															<div class="timeline-circle-second-line"></div>
+														</div>
+															
+													</div>
+											
+											</div>
+											<a href="https://fastlanepab.co.uk" target="_blank" class="card card--default mx-0 carousel-cell w-100 history position-relative" style="border: 1px #BECDE0 solid;">
+							                        <div class="h-100 d-flex flex-column">
+							                          <div class="position-relative">
+							                            <div class="card__image">
+							                             
+							                             <img src="assets/images/fastlane.png" class="w-100 carousel-cell-image mt-2 px-2" style="object-fit: contain; height: 8rem;">              
+							                                     
+							                            </div>
+							                            
+							                          </div>
+							                          <div class="card-body d-flex flex-column justify-content-between py-3">
+
+							                          		<div class="card-title card-title__primary mb-1">
+								                            	Skills                          
+								                          	</div>
+								                            <div class="card-title card-title__secondary mb-1">
+								                            	ACF, Javascript, jQuery,                           
+								                          	</div>
+								        					
+							                          </div>
+							                        </div>
+							                        <div class="about-company-carousel-overlay"></div>
+							                </a>
+											
+										</div>
+
+										<div class="col-xl-3 col-lg-6 carousel-parent-timeline">
+											<div class="draw-a-line w-100 transparent"></div>
+											<div class="draw-a-line w-100"></div>
+											<div class="position-relative" style="height: 2.625rem;">
+											
+													<div class="position-absolute first-timeline-in-group">
+														<div class="w-100 d-flex align-items-center">
+															<img src="assets/images/point.png" class="timeline-circle">
+														
+															<div class="timeline-circle-first-line"></div>
+															<!-- <div class="timeline-circle-year mx-2">  -->
+															
+																<a href="https://mccabebarton.com/" target="_blank" class="timeline-circle-year mx-2" style="font-size: 17px;">
+																	Mccabe & Barton
+																</a>
+																
+															<!-- </div> -->
+
+															<div class="timeline-circle-second-line"></div>
+														</div>
+															
+													</div>
+											
+											</div>
+											<a href="https://mccabebarton.com/" target="_blank" class="card card--default mx-0 carousel-cell w-100 history position-relative" style="border: 1px #BECDE0 solid;">
+							                        <div class="h-100 d-flex flex-column">
+							                          <div class="position-relative">
+							                            <div class="card__image">
+							                             
+							                             <img src="assets/images/mccabe.jpeg" class="w-100 carousel-cell-image mt-2 px-2" style="object-fit: contain; height: 8rem;">              
+							                                     
+							                            </div>
+							                            
+							                          </div>
+							                          <div class="card-body d-flex flex-column justify-content-between py-3">
+
+							                          		<div class="card-title card-title__primary mb-1">
+								                            	Skills                          
+								                          	</div>
+								                            <div class="card-title card-title__secondary mb-1">
+								                            	ACF, Javascript, jQuery,                           
+								                          	</div>
+								        					
+							                          </div>
+							                        </div>
+							                        <div class="about-company-carousel-overlay"></div>
+							                </a>
+											
+										</div>
+
+									</div>
+								</div>
+							</div>
 						</div>
 						<hr>
 						<div class="resume-footer text-center">
@@ -327,5 +740,121 @@
 			
 
 </body>
+
+<script>
+	
+    var $carouselTimeline = $('.carousel-timeline');
+
+    
+	
+	$carouselTimeline.on( 'ready.flickity', function() {
+		  	
+			//history-timeline
+			
+
+			$(".carousel-parent-timeline.is-selected .carousel-cell").addClass('on-screen');
+		  	if($(".carousel-parent-timeline.is-selected").prevAll(".carousel-parent-timeline:first").length == 0) {
+		  	
+		  	
+			  	$(".carousel-parent-timeline:last .carousel-cell").addClass('on-screen');
+			  } else {
+			  	
+				    
+
+
+				    $('.carousel-parent-timeline.is-selected').prevAll(".carousel-parent-timeline:first").find('.carousel-cell').addClass('on-screen');
+					
+			}
+
+			if($(".carousel-parent-timeline.is-selected").nextAll(".carousel-parent-timeline:first").length == 0) {
+		  	
+		  	
+			  	$(".carousel-parent-timeline:first .carousel-cell").addClass('on-screen');
+			} else {
+
+				    $('.carousel-parent-timeline.is-selected').nextAll(".carousel-parent-timeline:first").find('.carousel-cell').addClass('on-screen');
+					
+			}
+
+
+	});
+	$( document ).ready(function() { 
+		
+
+		
+		$('.flickity-prev-next-button').css('display', 'none');
+
+		$(".left-arrow-about").click(function(e) {
+	        e.preventDefault();
+	        
+	        $('.history-timeline .flickity-prev-next-button.previous').click();
+	        
+	        
+	        
+	    });
+
+	    $(".right-arrow-about").click(function(e) {
+	        e.preventDefault();
+	        
+	        $('.history-timeline .flickity-prev-next-button.next').click();
+	        
+	        
+	        
+	    });
+	   
+
+	    // $carouselTimeline.on('pointerUp.flickity', function (event, pointer) {
+	    //     $carouselTimeline.flickity('playPlayer');
+	    // });
+
+		
+
+		$carouselTimeline.on( 'change.flickity', function( event, index ) {
+		  	
+			//history timeline
+
+			
+			$('.carousel-parent-timeline .carousel-cell').removeClass('on-screen');
+		  	$(".carousel-parent-timeline.is-selected .carousel-cell").addClass('on-screen');
+		  	if($(".carousel-parent-timeline.is-selected").prevAll(".carousel-parent-timeline:first").length == 0) {
+		  	
+		  	
+			  	$(".carousel-parent-timeline:last .carousel-cell").addClass('on-screen');
+			  } else {
+			  	
+				    
+
+
+				    $('.carousel-parent-timeline.is-selected').prevAll(".carousel-parent-timeline:first").find('.carousel-cell').addClass('on-screen');
+					
+			}
+
+			if($(".carousel-parent-timeline.is-selected").nextAll(".carousel-parent-timeline:first").length == 0) {
+		  	
+		  	
+			  	$(".carousel-parent-timeline:first .carousel-cell").addClass('on-screen');
+			} else {
+
+				    $('.carousel-parent-timeline.is-selected').nextAll(".carousel-parent-timeline:first").find('.carousel-cell').addClass('on-screen');
+					
+			}
+
+
+		});
+
+		
+
+	    
+
+		
+
+		
+
+
+
+	});
+</script>
+
+
 </html> 
 
